@@ -4,11 +4,11 @@ self.addEventListener('install', e => {
     caches.open('me-notes').then(cache => {
       return cache.addAll([
         '/',
-        'index.html',
-        'assets/vendors/tailwind/tailwind.js',
-        'assets/js/main.js',
-        'assets/vendors/fontawesome/css/all.min.css',
-        'assets/vendors/fontawesome/webfonts/fa-solid-900.woff2'
+        '/me-notes/index.html',
+        '/me-notes/assets/vendors/tailwind/tailwind.js',
+        '/me-notes/assets/js/main.js',
+        '/me-notes/assets/vendors/fontawesome/css/all.min.css',
+        '/me-notes/assets/vendors/fontawesome/webfonts/fa-solid-900.woff2'
       ]);
     })
   );
