@@ -389,6 +389,6 @@ function deleteNote() {
 // register service worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-           .register('/assets/js/sw.js')
+           .register('/me-notes/assets/js/sw.js')
            .then(() => console.log('Service worker registered'));
 }
