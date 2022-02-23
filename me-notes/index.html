@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me Notes</title>
+  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">  
+  <script src="assets/vendors/tailwind/tailwind.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<!-- md:overflow-y-scroll used to make smooth add note transition in tablet and above -->
+<body class="bg-gray-50 text-gray-800 md:overflow-y-scroll">
+  <main class="p-5">
+    <!-- note list -->
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5" id="noteList"></div>
+
+    <!-- add note -->
+    <div class="bg-white fixed top-0 left-0 h-full w-full p-5 pt-12 md:w-3/4 md:h-3/4 md:bottom-0 md:right-0 md:m-auto md:rounded md:shadow-lg lg:w-1/2 hidden" id="addNotePage">
+      <form class="h-full flex flex-col" id="addNoteForm">
+        <input type="text" placeholder="Title" class="text-xl font-bold outline-none mb-2" id="noteTitle" required>
+        <textarea placeholder="Notes" class="w-full flex-1 mb-3 leading-snug outline-none" id="noteText" required></textarea>
+        <button class="bg-gray-200 rounded py-3 text-lg font-bold hover:bg-gray-300 active:bg-gray-200">Submit</button>
+      </form>
+
+      <!-- close button -->
+      <button class="absolute top-5 right-5" id="closeAddNoteBtn">
+        <i class="fa-solid fa-close text-3xl leading-none"></i>
+      </button>
+
+      <!-- success icon -->
+      <div class="absolute top-0 left-0 flex w-full h-full justify-center items-center hidden" id="successIcon">
+        <i class="fa-solid fa-check font-bold text-5xl text-green-600 md:text-6xl lg:text-7xl xl:text-8xl"></i>
+      </div>
+    </div>
+
+    <!-- add/delete note button -->
+    <button class="fixed bottom-5 right-5 bg-gray-200 w-12 h-12 rounded-full lg:ml-auto lg:mr-auto lg:left-0 lg:right-0 hover:bg-gray-300 active:bg-gray-200 shadow" id="addDeleteBtn">
+      <i class="fa-solid fa-plus text-3xl"></i>
+    </button>
+
+    <!-- notes -->
+    <div class="fixed top-0 left-0 bg-white h-full w-full z-10 overflow-y-scroll hidden" id="note">
+      <div class="container mx-auto px-5 py-6 lg:pt-8">  
+        <button class="mb-3" id="closeNoteBtn">
+          <i class="fa-solid fa-arrow-left text-2xl leading-none"></i>
+        </button>
+
+        <div id="noteInner"></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
