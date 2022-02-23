@@ -3,11 +3,11 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open('me-notes').then(cache => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/assets/vendors/tailwind/tailwind.js',
-        '/assets/js/main.js',
-        '/assets/vendors/fontawesome/css/all.min.css'
+        '/me-notes/',
+        '/me-notes/index.html',
+        '/me-notes/assets/vendors/tailwind/tailwind.js',
+        '/me-notes/assets/js/main.js',
+        '/me-notes/assets/vendors/fontawesome/css/all.min.css'
       ]);
     })
   );
