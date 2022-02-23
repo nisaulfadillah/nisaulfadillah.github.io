@@ -14,10 +14,12 @@ self.addEventListener('install', e => {
   );
 });
 
+let q;
 // responding further request
 self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(response => {
+      q = response;
       return response || fetch(e.request);
     })
   );
