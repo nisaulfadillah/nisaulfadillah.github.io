@@ -1,11 +1,11 @@
 const cacheName = 'me-notes';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/assets/js/main.js',
-  '/assets/vendors/tailwind/tailwind.js',
-  '/assets/vendors/fontawesome/js/solid.min.js',
-  '/assets/vendors/fontawesome/js/fontawesome.min.js'
+  '/me-notes/',
+  '/me-notes/index.html',
+  '/me-notes/assets/js/main.js',
+  '/me-notes/assets/vendors/tailwind/tailwind.js',
+  '/me-notes/assets/vendors/fontawesome/js/solid.min.js',
+  '/me-notes/assets/vendors/fontawesome/js/fontawesome.min.js'
 ];
 
 // install service worker

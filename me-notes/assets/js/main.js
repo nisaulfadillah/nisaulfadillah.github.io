@@ -388,5 +388,5 @@ function deleteNote() {
 
 // register service worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
+  navigator.serviceWorker.register('/me-notes/sw.js');
 }
