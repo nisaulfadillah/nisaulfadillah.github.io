@@ -1,7 +1,9 @@
 const cacheName = 'nisaulfadillah';
 const urlsToCache = [
   '/',
-  'index.html'
+  '/index.html',
+  '/assets/js/main.js',
+  '/assets/vendors/tailwind/tailwind.js'
 ];
 
 // install service worker
