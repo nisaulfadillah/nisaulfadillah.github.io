@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop the Watch - Stopwatch</title>
+  <script src="assets/vendors/tailwind/tailwind.js"></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="text-gray-800">
+  <main class="h-screen flex flex-col">
+    <!-- stopwatch screen -->
+    <div class="flex-1 flex justify-center items-center">
+      <span class="text-5xl tracking-wider lg:text-6xl" id="stopwatch">00:00:00</span>
+    </div>
+
+    <!-- control buttons -->
+    <div class="mb-10 text-center">
+      <button class="bg-purple-800 w-24 h-10 text-white rounded-full hover:bg-purple-900 active:bg-purple-800" id="startStopBtn">Start</button>
+      <button class="bg-gray-800 w-24 h-10 text-white rounded-full hover:bg-gray-900 active:bg-gray-800 ml-10" id="resetBtn">Reset</button>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
